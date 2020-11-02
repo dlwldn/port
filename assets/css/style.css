@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    font-family: 'Abel', sans-serif;
+}
+
+
+/* section 1 */
+.sec1 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.sec1 > h1 {
+    color: #fff;
+    font-style: oblique;
+    font-size: 7vw;
+    line-height: 6vw;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+
+.sec1-top {
+    width: 100%;
+    height: 100px;
+    background-color: #A01C32;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: moveTo 7s;
+}
+
+.main-img {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/bg2.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.count-number {
+    width: 100%;
+    height: 20%;
+    font-size: 5vw;
+    font-weight: 400;
+    background-color: #0F2417;
+    color: #B0DDC2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec1-bottom {
+    width: 100%;
+    height: 100px;
+    background-color: #A01C32;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: moveTo 7s;
+}
+
+.sec1-bottom-nav {
+    width: 100%;
+    height: 78px;
+    background-color: #A01C32;
+    font-size: 2vw;
+    transform: translateY(23px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec1-bottom-nav-lists {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-item > a {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item1:hover > a > span:nth-child(1) {animation: letterEffect 0.5s; animation-delay: 0.05s;}
+.item1:hover > a > span:nth-child(2) {animation: letterEffect 0.5s; animation-delay: 0.10s;}
+.item1:hover > a > span:nth-child(3) {animation: letterEffect 0.5s; animation-delay: 0.15s;}
+.item1:hover > a > span:nth-child(4) {animation: letterEffect 0.5s; animation-delay: 0.20s;}
+.item1:hover > a > span:nth-child(5) {animation: letterEffect 0.5s; animation-delay: 0.25s;}
+
+.item2:hover > a > span:nth-child(1) {animation: letterEffect 0.5s; animation-delay: 0.05s;}
+.item2:hover > a > span:nth-child(2) {animation: letterEffect 0.5s; animation-delay: 0.10s;}
+.item2:hover > a > span:nth-child(3) {animation: letterEffect 0.5s; animation-delay: 0.15s;}
+.item2:hover > a > span:nth-child(4) {animation: letterEffect 0.5s; animation-delay: 0.20s;}
+.item2:hover > a > span:nth-child(5) {animation: letterEffect 0.5s; animation-delay: 0.25s;}
+
+.item3:hover > a > span:nth-child(1) {animation: letterEffect 0.5s; animation-delay: 0.05s;}
+.item3:hover > a > span:nth-child(2) {animation: letterEffect 0.5s; animation-delay: 0.10s;}
+.item3:hover > a > span:nth-child(3) {animation: letterEffect 0.5s; animation-delay: 0.15s;}
+.item3:hover > a > span:nth-child(4) {animation: letterEffect 0.5s; animation-delay: 0.20s;}
+.item3:hover > a > span:nth-child(5) {animation: letterEffect 0.5s; animation-delay: 0.25s;}
+.item3:hover > a > span:nth-child(6) {animation: letterEffect 0.5s; animation-delay: 0.30s;}
+.item3:hover > a > span:nth-child(7) {animation: letterEffect 0.5s; animation-delay: 0.35s;}
+
+.item4:hover > a > span:nth-child(1) {animation: letterEffect 0.5s; animation-delay: 0.05s;}
+.item4:hover > a > span:nth-child(2) {animation: letterEffect 0.5s; animation-delay: 0.10s;}
+.item4:hover > a > span:nth-child(3) {animation: letterEffect 0.5s; animation-delay: 0.15s;}
+.item4:hover > a > span:nth-child(4) {animation: letterEffect 0.5s; animation-delay: 0.20s;}
+.item4:hover > a > span:nth-child(5) {animation: letterEffect 0.5s; animation-delay: 0.25s;}
+.item4:hover > a > span:nth-child(6) {animation: letterEffect 0.5s; animation-delay: 0.30s;}
+.item4:hover > a > span:nth-child(7) {animation: letterEffect 0.5s; animation-delay: 0.35s;}
+
+.frame {
+    width: 100%;
+    height: 22px;
+    background-color: red;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fr-top {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    border-bottom: 1px solid black;
+}
+
+.fr-bottom {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    border-top: 1px solid black;
+}
+
+.frame-line-top {
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+}
+
+.frame-img {
+    position: relative; 
+    width: 100%; 
+    height: 16px; 
+    background: #BD9302 url(https://pumper.thisismailan.com/assets/images/frame-pattern.svg) repeat-x 0 0; 
+}
+
+.frame-line-bottom {
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+}
+
+.line-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.line-middle1 {
+    animation: frame-top 100s infinite linear; 
+    transform: translateZ(0);
+}
+
+.line-middle2 {
+    animation: frame-bottom 100s infinite linear; 
+    transform: translateZ(0);
+}
+
+.line-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+    @keyframes frame-top {
+        0% {background-position: 0}
+        100% {background-position: 100%}
+    }
+
+    @keyframes frame-bottom {
+        0% {background-position: 100%}
+        100% {background-position: 0}
+    }
+
+    @keyframes moveTo {
+        0% {height: 40%}
+        55% {height: 40%}
+        60% {height: 50%}
+        75% {height: 50%}
+        85% {height: 100px}
+        100% {height: 100px}
+    }
+
+    @keyframes letterEffect {
+        0% {transform: translateY(0)}
+        30% {transform: translateY(-5px)}
+        70% {transform: translateY(10px)}
+        100% {transform: translateY(0)}
+    }
+/* section 1 end */
+
+/* section 2 */
+.sec2 {width: 100%; padding:0 1%; font-size: 2vw; background-color: #A01C32;}
+.sec2 .sec2-content {width: 100%; background-color: #ffcc00; }
+.sec2 .sec2-content h1 {font-size: 18vw; font-weight: 900; padding:0 20px; color: #000; letter-spacing: -1vw; }
+.sec2 .sec2-content div {font-size: 3vw; padding: 100px 50px; display: flex; justify-content: flex-end; align-items: center; border-top: 3px solid #000;}
+.sec2 .sec2-content > div ul li {padding: 30px 0; border-bottom: 1px solid #000;}
+.sec2 .sec2-content > div ul li:nth-child(1) {font-size: 5vw; font-weight: 700;}
+.sec2 .sec2-content > div ul li span:nth-child(1) {display: inline-block; min-width: 10vw; margin-right: 1vw;}
+/* section 2 end */
+
+/* section 3 */
+.sec3 {width: 100%; padding:0 1%; background-color: #A01C32;}
+.sec3 .sec3-content {width: 100%; background-color:#fff;}
+.sec3 .sec3-content h1 {font-size: 18vw; font-weight: 900; padding:0 20px; color: #000; letter-spacing: -1vw;}
+.sec3 .sec3-content > div {font-size: 8vw; display: flex; border-top: 3px solid #000;}
+.sec3 .sec3-content div div {display: flex; justify-content: center; align-items: center;}
+.sec3 .sec3-content div div:nth-child(1) {flex-basis: 50%; justify-content: flex-start; padding: 50px 0 50px 20px; border-right: 3px solid #000;}
+.sec3 .sec3-content div div:nth-child(1) ul li:hover {cursor: pointer; color: #9c1414}
+.sec3 .sec3-content div div:nth-child(1) ul li:hover i {display: inline-block}
+.sec3 .sec3-content div div:nth-child(1) ul li i {display: none;}
+.sec3 .sec3-content div div:nth-child(2) {flex-basis: 50%; flex-direction: column;}
+.sec3 .sec3-content div div:nth-child(2) p {font-size: 8vw; margin-bottom: 30px;}
+.sec3 .sec3-content div div:nth-child(2) ul {width: 50%;}
+.sec3 .sec3-content div div:nth-child(2) ul li {font-size: 2vw; list-style: decimal;}
+/* section 3 end*/
+
+/* section 4 */
+.sec4 {width: 100%; padding:0 1%; background-color: #A01C32;}
+.sec4 .sec4-content {width: 100%; background-color: #fff;}
+.sec4 .sec4-content h1 {font-size: 19vw; font-weight: 900; padding:0 20px; color: #000; letter-spacing: -1vw; border-top: 3px solid #000; border-bottom: 3px solid #000;}
+.sec4 .sec4-content div .item {height: 130vh; background-color: #fff; display: flex; justify-content: center; align-items: center; padding: 3%}
+.sec4 .sec4-content div .item .left-content {flex: 0.6; display: flex; justify-content: center; align-items: center; margin-right: 4rem}
+.sec4 .sec4-content div .item .right-content {flex: 0.4;}
+.sec4 .sec4-content div .item .left-content img {width: 100%;}
+.sec4 .sec4-content div .item .right-content h2 {font-size: 3.5vw; margin-bottom: 10px;}
+.sec4 .sec4-content div .item .right-content p {font-size: 1.3vw; margin-bottom: 20px;}
+.sec4 .sec4-content div .item .right-content p:nth-child(2) {font-size: 1.8vw; margin-bottom: 20px; color: #A01C32;}
+.sec4 .sec4-content div .item .right-content a {display: inline-block; position: relative; width: 200px; height: 50px; font-size: 1.3rem; color:#fff; border:1px solid #0066ff; text-align: center; line-height: 50px; border-radius: 20px; z-index: 1;}
+.sec4 .sec4-content div .item .right-content a::after {content: ''; width: 200px; height: 50px; background-color: #0066ff; position: absolute; bottom: -10px; left: -10px; border-radius: 20px; z-index: -2;}
+.sec4 .sec4-content div .item .right-content a:hover::after {bottom: 0px; left: 0px; transition: 0.2s ease-out;}
+/* section 4 end*/
+
+.sec5 {width: 100%; padding:0 1%; background-color: #A01C32;}
+.sec5 .sec5-content {width: 100%; background-color: #fff; padding: 5%;}
+.sec5 .sec5-content h1 {font-size: 18vw; font-weight: 900; text-align: center; color: #000; letter-spacing: -1vw; border-top: 3px solid #000; border-bottom: 3px solid #000;}
+.sec5 .sec5-content div {display: flex; flex-direction: column; justify-content: center; align-items: center; margin-top: 50px;}
+.sec5 .sec5-content div h2 {font-size: 3vw;}
+.sec5 .sec5-content div img {width: 250px; height: 250px; border-radius: 50%; margin: 30px 0;}
+.sec5 .sec5-content div div:nth-child(1) {display: flex; flex-direction: column; justify-content: center; align-items: center;}
+.sec5 .sec5-content div div:nth-child(2) {display: flex; flex-direction: column; justify-content: space-evenly; align-items: flex-start;}
+.sec5 .sec5-content div div:nth-child(2) ul li {display: flex; justify-content: flex-start; align-items: center;}
+.sec5 .sec5-content div div:nth-child(2) ul li:nth-child(4) {margin-top: 50px; justify-content: center;}
+.sec5 .sec5-content div div:nth-child(2) ul li i, .sec5 .sec5-content > div div:nth-child(2) ul li a i {font-size: 4vw; color: black;}
+.sec5 .sec5-content div div:nth-child(2) ul li a i {font-size: 6vw;}
+.sec5 .sec5-content div div:nth-child(2) ul li a i:hover {color:  #A01C32;}
+.sec5 .sec5-content div div:nth-child(2) ul li p {margin-left: 1.5rem; font-size: 1.5rem;}
+
+.hidden {display: none !important;}
+.fixed {position: fixed; top: 0; left: 0; transform: translateY(0); z-index: 1000;}
+
+
+@media screen and (max-width: 1080px) {
+    .sec4 .sec4-content > div {padding: 10em 0;}
+    .sec4 .sec4-content div .item {height: auto;}
+    .sec4 .sec4-content div .item {flex-direction: column; margin-bottom: 10em;}
+    .sec4 .sec4-content div .item:nth-child(7) {margin-bottom: 0;}
+    .sec4 .sec4-content div .item .left-content {width: 80%; margin-right: 0; margin-bottom: 3em;}
+    .sec4 .sec4-content div .item .right-content a, .sec4 .sec4-content div .item .right-content a::after {width: 100%;}
+}
