@@ -277,7 +277,7 @@ body {
 .sec5 .sec5-content h1 {font-size: 18vw; font-weight: 900; text-align: center; color: #000; letter-spacing: -1vw; border-top: 3px solid #000; border-bottom: 3px solid #000;}
 .sec5 .sec5-content div {display: flex; flex-direction: column; justify-content: center; align-items: center; margin-top: 50px;}
 .sec5 .sec5-content div h2 {font-size: 3vw;}
-.sec5 .sec5-content div img {width: 250px; height: 250px; border-radius: 50%; margin: 30px 0;}
+.sec5 .sec5-content div img {width: 300px; height: 350px; border-radius: 50%; margin: 30px 0;}
 .sec5 .sec5-content div div:nth-child(1) {display: flex; flex-direction: column; justify-content: center; align-items: center;}
 .sec5 .sec5-content div div:nth-child(2) {display: flex; flex-direction: column; justify-content: space-evenly; align-items: flex-start;}
 .sec5 .sec5-content div div:nth-child(2) ul li {display: flex; justify-content: flex-start; align-items: center;}
