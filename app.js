@@ -2,6 +2,9 @@ const countingNumber = document.querySelector('.count-number');
 const section1Title = document.querySelector('.sec1-title');
 const section1BottomList = document.querySelector('.sec1-bottom-nav');
 
+const sectionTop = document.querySelector('.sec1-top');
+const sectionBottom = document.querySelector('.sec1-bottom');
+
 const section2 = document.querySelector('.sec2');
 const section3 = document.querySelector('.sec3');
 const section4 = document.querySelector('.sec4');
@@ -38,23 +41,27 @@ const navList4 = document.querySelector('.item4');
             number++;
             if(number > 100) {
                 clearInterval(timer2);
-                setTimeout(()=> {
-                    countingNumber.style.display = "none";
+                sectionTop.classList.add("sec1-top-ani1");
+                sectionBottom.classList.add("sec1-bottom-ani1");
+                setTimeout(()=> {    
+                    sectionTop.classList.add("sec1-top-ani2");
+                    sectionBottom.classList.add("sec1-bottom-ani2");       
                     section2.classList.remove("hidden");
                     section3.classList.remove("hidden");
                     section4.classList.remove("hidden");
                     section5.classList.remove("hidden");
+                    countingNumber.style.display = "none";
                     section1Title.classList.remove("hidden");  
-                    section1Title.classList.add("animated","fadeInDown", "delay-1s");
+                    section1Title.classList.add("animated","fadeInDown", "delay-2s");
                     navList1.classList.remove("hidden");  
                     navList2.classList.remove("hidden");  
                     navList3.classList.remove("hidden");  
                     navList4.classList.remove("hidden");  
-                    navList1.classList.add("animated", "fadeIn", "delay-2s");
-                    navList2.classList.add("animated", "fadeIn", "delay-3s");
-                    navList3.classList.add("animated", "fadeIn", "delay-4s");
-                    navList4.classList.add("animated", "fadeIn", "delay-5s");
-                } ,1700)   
+                    navList1.classList.add("animated", "fadeIn", "delay-3s");
+                    navList2.classList.add("animated", "fadeIn", "delay-4s");
+                    navList3.classList.add("animated", "fadeIn", "delay-5s");
+                    navList4.classList.add("animated", "fadeIn", "delay-6s");
+                } ,1000)   
             }
             else {
                 countingNumber.innerHTML = `${number}%`;
